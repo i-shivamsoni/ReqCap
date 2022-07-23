@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-         volleyDataModel = new VolleyDataModel(this);
+        VolleyDataModel volleyDataModel = new VolleyDataModel(this);
         volleyDataModel.GetVollyData(new AnswerListAsyncResponse() {
             @Override
             public void processFinished(JSONObject response) {
